@@ -468,6 +468,54 @@
       padding: 3px 8px;
       border-radius: 6px;
     }
+    .project-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+    .btn-project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border: 1px solid var(--tag-border);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-project-link:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+      transform: translateY(-1px);
+    }
+    .live-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--success);
+      font-family: var(--font-mono);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      padding: 2px 7px;
+      border-radius: 9999px;
+    }
+    .live-dot-sm {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 6px var(--success);
+    }
 
     /* EXPERIENCE & TIMELINE */
     .timeline {
@@ -805,7 +853,10 @@
           <div class="project-card">
             <div class="project-body">
               <div class="project-top">
-                <span class="project-type-badge">Full-Stack Enterprise</span>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span class="project-type-badge">Full-Stack Enterprise</span>
+                  <span class="live-indicator"><span class="live-dot-sm"></span> LIVE</span>
+                </div>
                 <span class="project-year">2025 – 2026</span>
               </div>
               <h3 class="project-name">Aqua Drop CRM</h3>
@@ -823,6 +874,12 @@
                 <span class="project-tech-pill">Express</span>
                 <span class="project-tech-pill">MongoDB</span>
                 <span class="project-tech-pill">JWT</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://aquadrop-lime.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo (aquadrop-lime.vercel.app)
+                </a>
               </div>
             </div>
           </div>
