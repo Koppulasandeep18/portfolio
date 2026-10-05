@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radiant Smiles Dental Clinic | Best Dentist in Ameerpet & Punjagutta, Hyderabad</title>
+  <meta name="description" content="Radiant Smiles Dental Clinic - Advanced Laser Teeth Whitening, Painless Root Canal, Dental Implants, and Braces in Dwarakapuri, Punjagutta / Ameerpet, Hyderabad.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0284c7;       /* Dental Blue */
+      --primary-dark: #0369a1;
+      --secondary: #0f172a;
+      --whatsapp: #25D366;
+      --whatsapp-dark: #128C7E;
+      --bg-light: #f8fafc;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --radius: 14px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    }
+    body {
+      color: var(--text);
+      background-color: #ffffff;
+      line-height: 1.6;
+      padding-bottom: 75px;
+    }
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .topbar {
+      background: var(--secondary);
+      color: #e2e8f0;
+      font-size: 13px;
+      padding: 9px 0;
+      text-align: center;
+    }
+    .topbar span {
+      color: #38bdf8;
+      font-weight: 700;
+    }
+    header {
+      background: #ffffff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: 14px 0;
+    }
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-icon {
+      width: 44px;
+      height: 44px;
+      background: #e0f2fe;
+      color: var(--primary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    .brand-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1.2;
+    }
+    .brand-sub {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .btn-header-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--whatsapp);
+      color: #fff;
+      padding: 9px 18px;
+      border-radius: 9px;
+      font-size: 13.5px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .hero {
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+      padding: 55px 0 65px;
+      text-align: center;
+    }
+    .rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      font-size: 13px;
+      font-weight: 700;
+      color: #d97706;
+      margin-bottom: 22px;
+      border: 1px solid #fef3c7;
+    }
+    .hero h1 {
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--secondary);
+      line-height: 1.22;
+      margin-bottom: 18px;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 span {
+      color: var(--primary);
+    }
+    .hero p {
+      font-size: 16.5px;
+      color: #475569;
+      max-width: 660px;
+      margin: 0 auto 30px;
+    }
+    .hero-cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-whatsapp-lg {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: var(--whatsapp);
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 11px;
+      font-size: 15.5px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+      transition: transform 0.2s;
+    }
+    .btn-whatsapp-lg:hover {
+      background: var(--whatsapp-dark);
+      transform: translateY(-2px);
+    }
+    .btn-call-lg {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 1.5px solid #cbd5e1;
+      color: var(--secondary);
+      padding: 14px 26px;
+      border-radius: 11px;
+      font-size: 15.5px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-top: -32px;
+      margin-bottom: 55px;
+    }
+    .hl-card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      padding: 22px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border: 1px solid #f1f5f9;
+    }
+    .hl-num {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .hl-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+    .section-title h2 {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--secondary);
+    }
+    .section-title p {
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+      margin-bottom: 60px;
+    }
+    .service-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius);
+      padding: 26px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(2, 132, 199, 0.12);
+      border-color: var(--primary);
+    }
+    .service-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    .service-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--secondary);
+    }
+    .service-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      background: var(--secondary);
+      color: #ffffff;
+      padding: 40px;
+      border-radius: 18px;
+      margin-bottom: 45px;
+    }
+    .info-card h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #38bdf8;
+    }
+    .info-card p {
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.65;
+    }
+    .mobile-float-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      padding: 10px 16px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.12);
+      display: flex;
+      gap: 12px;
+      z-index: 100;
+    }
+    .float-btn-wa {
+      flex: 1;
+      background: var(--whatsapp);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px;
+      border-radius: 11px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .float-btn-call {
+      background: var(--primary);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      border-radius: 11px;
+      text-decoration: none;
+      font-size: 22px;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+      padding: 24px 0;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 30px; }
+      .btn-header-wa { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      📍 Location: <strong>NV Plaza, Sai Baba Temple Road, Punjagutta / Ameerpet, Hyderabad</strong> • 📞 Hotline: +91 80082 96273
+    </div>
+  </div>
+
+  <header>
+    <div class="container header-inner">
+      <div class="logo-box">
+        <div class="logo-icon">🦷</div>
+        <div>
+          <div class="brand-title">Radiant Smiles Dental Clinic</div>
+          <div class="brand-sub">Advanced Laser & Cosmetic Dentistry</div>
+        </div>
+      </div>
+      <a href="https://wa.me/918008296273?text=Hello%20Radiant%20Smiles%20Dental%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment." target="_blank" class="btn-header-wa">
+        💬 WhatsApp Booking
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="rating-badge">
+        ⭐ 4.8 Rating (Patient Verified) • Punjagutta / Ameerpet
+      </div>
+      <h1>
+        Gentle, Painless Dental Care & <span>Cosmetic Smile Design</span>
+      </h1>
+      <p>
+        High-precision dental treatments equipped with digital X-rays, single-sitting root canals, laser whitening, and invisible braces. Serving families across Ameerpet and Punjagutta.
+      </p>
+      
+      <div class="hero-cta-group">
+        <a href="https://wa.me/918008296273?text=Hello%20Radiant%20Smiles%20Dental%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment." target="_blank" class="btn-whatsapp-lg">
+          💬 Book Appointment on WhatsApp
+        </a>
+        <a href="tel:+918008296273" class="btn-call-lg">
+          📞 Call: +91 80082 96273
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="highlights">
+      <div class="hl-card">
+        <div class="hl-num">100%</div>
+        <div class="hl-label">Painless Anesthesia Tech</div>
+      </div>
+      <div class="hl-card">
+        <div class="hl-num">4,000+</div>
+        <div class="hl-label">Happy Patients Treated</div>
+      </div>
+      <div class="hl-card">
+        <div class="hl-num">Sterilized</div>
+        <div class="hl-label">Hospital-Grade Safety</div>
+      </div>
+      <div class="hl-card">
+        <div class="hl-num">Instant</div>
+        <div class="hl-label">WhatsApp Slot Confirmation</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container" id="services">
+    <div class="section-title">
+      <h2>Specialized Dental Treatments</h2>
+      <p>Transparent pricing, gentle touch, and state-of-the-art procedures</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">✨</div>
+        <h3>Laser Teeth Whitening</h3>
+        <p>Advanced laser-guided scaling and whitening to remove tough stains, restoring bright natural enamel safely.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🦷</div>
+        <h3>Single-Sitting Root Canal (RCT)</h3>
+        <p>Pain-free computer-assisted rotary root canal therapy with local anesthesia, completed in just one comfortable visit.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🔩</div>
+        <h3>Dental Implants & Zirconia Crowns</h3>
+        <p>Permanent, high-durability tooth replacement with biocompatible titanium implants and natural-looking ceramic crowns.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">😁</div>
+        <h3>Invisible Clear Aligners & Braces</h3>
+        <p>Custom orthodontic alignment solutions to straighten irregular teeth discreetly without bulky metal wires.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">👶</div>
+        <h3>Pediatric (Child) Dental Care</h3>
+        <p>Gentle cavity protection, painless milk tooth care, and fluoride coatings in a calm, friendly atmosphere.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚨</div>
+        <h3>Emergency Tooth Pain Relief</h3>
+        <p>Fast emergency appointments for severe toothaches, broken teeth, bleeding gums, or swollen wisdom teeth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="info-grid">
+      <div class="info-card">
+        <h4>📍 Clinic Address</h4>
+        <p>
+          <strong>Radiant Smiles Dental Clinic</strong><br>
+          NV Plaza, Flat 5 & 6, 3/347/9/1/N,<br>
+          Sai Baba Temple Road, Dwarakapuri,<br>
+          Punjagutta / Ameerpet, Hyderabad - 500082
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h4>⏰ Consultation Hours</h4>
+        <p>
+          <strong>Monday – Saturday:</strong> 10:30 AM – 8:30 PM<br>
+          <strong>Sunday:</strong> Prior Appointment<br><br>
+          <em>Emergency tooth pain care on call.</em>
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h4>💬 Quick WhatsApp Booking</h4>
+        <p>
+          Direct slot confirmation in under 5 minutes without third-party platform delays.<br><br>
+          <a href="https://wa.me/918008296273?text=Hello%20Radiant%20Smiles%20Dental%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment." style="color: #38bdf8; font-weight: 700; text-decoration: none;">Message on WhatsApp Now →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Radiant Smiles Dental Clinic. All rights reserved. | Built by local tech partners.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-float-bar">
+    <a href="https://wa.me/918008296273?text=Hello%20Radiant%20Smiles%20Dental%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment." target="_blank" class="float-btn-wa">
+      💬 WhatsApp Appointment
+    </a>
+    <a href="tel:+918008296273" class="float-btn-call" title="Call Clinic">
+      📞
+    </a>
+  </div>
+
+</body>
+</html>
